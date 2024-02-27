@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: "Trajan Regular Pro";
+            src: url('../font/Trajan\ Pro\ Regular/Trajan\ Pro\ Regular.ttf');
+        }
+
+        .heading h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            font-size: 3.5rem;
+            font-family: "Trajan Regular Pro";
+            font-weight: 500;
+        }
+
+        .collection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin-top: 50px;
+        }
+
+        .collection img {
+            margin: 10px;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .eachBox {
+            margin-top: 50px;
+            margin-left: 50px;
+            height: 300px;
+            width: 300px;
+            background-size: cover;
+        }
+
+        .box {
+            display: flex;
+            width: fit-content;
+            flex-direction: column;
+            transition: 0.3s ease-in-out transform;
+        }
+
+        .box:hover {
+            transform: scale(1.2);
+        }
+
+        .nameFest {
+            display: flex;
+            justify-content: center;
+            font-size: 25px;
+            margin-left: 40px;
+            margin-top: 10px;
+        }
+
+        @font-face {
+            font-family: "Trajan Regular Pro";
+            src: url('../font/Trajan\ Pro\ Regular/Trajan\ Pro\ Regular.ttf');
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .ap_det {
+            margin-top: 16px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #253246;
+        }
+
+        #logo {
+            font-family: 'Trajan Regular Pro';
+            margin-left: 16px;
+            margin-top: 9px;
+            font-size: calc(42px + 6* ((100vw - 1400px) / 380));
+            color: #aa8657;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 17px;
+            cursor: pointer;
+            background: linear-gradient(to right, #9a7237, #d9a26d);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #soc {
+            font-size: 19px;
+            margin-top: -4px;
+        }
+
+        #menu {
+            display: flex;
+        }
+
+        #loga {
+            margin-right: 16px;
+        }
+
+        #login {
+            padding: 10px 30px;
+        }
+
+        .navmenu {
+            border: 1px solid #aa8657;
+            color: #aa8657;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .navmenu:hover {
+            background-color: #253246b3;
+        }
+
+        #dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 16px;
+        }
+
+        #drop {
+            display: flex;
+            align-items: center;
+            padding: 0 12px;
+            height: 100%;
+            margin-right: 0;
+        }
+
+        #dropit {
+            position: absolute;
+            display: none;
+            right: 0px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            background-color: #253246;
+            padding: 6px 0;
+        }
+
+        #dropdown:hover #dropit {
+            display: block;
+        }
+
+        .drpitm {
+            text-transform: uppercase;
+            font-size: 19px;
+            padding: 15px 30px;
+            color: #aa8657;
+            cursor: pointer;
+        }
+
+        .drpitm:hover {
+            background-color: #fffcf5;
+        }
+
+        .hami {
+            height: 1px;
+            width: 16px;
+            background: #aa8657;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body id="main">
+    <nav id="nav">
+        <a href="home.html" id="">
+            <div id="logo">
+                <p>MiniWorld</p>
+                <p id="soc">Society</p>
+            </div>
+        </a>
+        <div id="menu">
+            <a href="login.html" id="loga"><div id="login" class="navmenu">LOGIN</div></a>
+            <div id="dropdown">
+                <div id="drop" class="navmenu">
+                    <ul id="ham">
+                        <li class="hami"></li>
+                        <li class="hami"></li>
+                        <li class="hami"></li>
+                    </ul>
+                </div>
+                <div id="dropit">
+                    <ul id="drdwit">
+                        <a href="amenities.html">
+                            <li class="drpitm">Amenities</li>
+                        </a>
+                        <a href="event.html">
+                            <li class="drpitm">Events</li>
+                        </a>
+                        <a href="gallery.html">
+                            <li class="drpitm">Gallery</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="heading">
+            <h1>Events</h1>
+        </div>
+        <div class="collection">
+            <div class="box">
+            </div>
+        </div>
+    </div>
+    <script src="../js/event.js"></script>
+</body>
+
+</html>

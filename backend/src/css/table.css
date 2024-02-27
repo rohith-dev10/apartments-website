@@ -1,0 +1,96 @@
+#filt {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px 12px;
+    margin: 24px 0px;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.filtinp {
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px;
+    font-size: 18px;
+}
+
+.forminp {
+    background-color: white;
+    padding: 0;
+    outline: none;
+    padding: 4px 6px 4px 6px;
+    margin: 4px 0;
+    color: black;
+    cursor: pointer;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 4px;
+    cursor: unset;
+}
+
+#subbtn {
+    font-size: 16px;
+    padding: 8px 26px;
+    border-radius: 8px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#divbtn {
+    align-self: end;
+    margin: 0 16px 2px 16px;
+}
+
+#diva {
+    font-size: 30px;
+    margin-left: 16px;
+    padding: 2px 16px 2px 16px;;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-top: 11px;
+}
+
+
+/*  */
+
+.frminp{
+    background-color: unset;
+    padding: 0;
+    font-size: 18px;
+    border: unset;
+    margin: 4px 0;
+    color: black;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+#body {
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    flex-direction: column;
+}
+
+#titl {
+    font-size: 36px;
+    margin-bottom: 24px;
+    width: 60%;
+    text-align: center;
+}
+
+.cont{
+    width: 60%;
+}
+
+.divfrm {
+    padding: 16px 8px 16px 24px;
+    margin-bottom: 12px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+.divfrm:hover {
+    background-color: #d4d4d4;
+}
+

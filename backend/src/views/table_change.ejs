@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/nav.css">
+    <link rel="stylesheet" href="/table_change.css">
+</head>
+<body>
+    <div id="minilo" class="full" style="width: unset; position: unset;">
+        <div id="miniwlo">
+            <a href="M:/DiuAssign/C/SEM-4cs262/project_sms/frontend/html/f.html" id="">
+                <div id="logo">
+                    <p>MiniWorld</p>
+                    <p id="soc">Society</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="body">
+        <div class="cont">
+            <form action="/admin/<%= table %>/update" method="post">
+                <div id="filt">
+                    <% for ( var r in result ) { %>
+                        <div class="filtinp">
+                            <%= r %>
+                            <input class="forminp" name="<%= r %>" value="<%- result[r] %>">
+                        </div>
+                    <% } %>
+                    <div>
+                        <input class="forminp" type="hidden" name="result" value='<%- JSON.stringify(result) %>'>
+                    </div>
+                    <div id="divbtn">
+                        <input type="submit" id="subbtn" value="Save">
+                    </div>
+                </div>
+            </form>
+            <form action="/admin/<%= table %>/delete" method="post">
+                <input type="submit" id="subbtn" value="Delete">
+                <input class="forminp" type="hidden" name="result" value='<%- JSON.stringify(result) %>'>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

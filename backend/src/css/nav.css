@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Trajan Regular Pro";
+    src: url('Trajan\ Pro\ Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#miniwlo {
+    padding-left: 16px;
+    padding-top: 22px;
+    padding-bottom: 17px;
+    background: #253246;
+}
+
+a{
+    text-decoration: none;
+}
+
+#soc {
+    font-size: 19px;
+    margin-top: -4px;
+}
+
+#logo {
+    font-family: 'Trajan Regular Pro';
+    /* margin-left: 16px; */
+    /* margin-top: 22px; */
+    font-size: calc(42px +  6* ((100vw - 1400px) / 380));
+    color: #aa8657;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(to right, #9a7237, #d9a26d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.full{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+#minilo {
+    height: unset;
+    z-index: 50;
+}

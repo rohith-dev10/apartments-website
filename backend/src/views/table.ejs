@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/nav.css">
+    <link rel="stylesheet" href="/table.css">
+</head>
+<body>
+    <div id="minilo" class="full" style="width: unset; position: unset;">
+        <div id="miniwlo">
+            <a href="M:/DiuAssign/C/SEM-4cs262/project_sms/frontend/html/f.html" id="">
+                <div id="logo">
+                    <p>MiniWorld</p>
+                    <p id="soc">Society</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="body">
+        <div class="cont">
+            <form autocomplete="off" action="/admin/<%= table %>/filter" method="post">
+                <div id="filt">
+                    <% col.forEach((c)=>{ %>
+                        <div class="filtinp">
+                            <%= c %>
+                            <input class="forminp" name="<%= c %>" value="">
+                        </div>
+                    <% }); %>
+                    <div>
+                        <input class="forminp" type="hidden" name="col" value='<%- JSON.stringify(col) %>'>
+                    </div>
+                    <div id="divbtn">
+                        <input type="submit" id="subbtn" value="Filter">
+                    </div>
+                    <div id="diva">
+                        <a href="/admin/<%= table %>/add">+</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="cont">
+            <% for( var i = 0 ; i < results ; i++ ) { %>
+                <div class="divfrm">
+                    <form method="post" action="/admin/<%= table %>/<%= i+1 %>/change" class="result">
+                        <% if (query) { %>
+                            <input type="hidden" name="query" value="<%= query %>">
+                        <% } %>
+                        <input type="submit" value="<%= table %> object <%= i+1 %>" class="frminp">
+                    </form>
+                </div>
+            <% }; %>
+       </div>
+    </div>
+</body>
+</html>

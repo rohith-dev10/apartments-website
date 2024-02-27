@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Trajan Regular Pro";
+    src: url('../font/Trajan\ Pro\ Regular/Trajan\ Pro\ Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#err {
+    color: #a77c42;
+    font-size: 18px;
+}
+
+#miniwlo {
+    padding-left: 16px;
+    padding-top: 22px;
+    padding-bottom: 17px;
+    background: #253246;
+}
+
+a{
+    text-decoration: none;
+}
+
+.frminp {
+    border: none;
+    padding: 8px 8px;
+    font-size: 20px;
+    outline: none;
+    margin: 16px 0;
+    border-radius: 6px;
+    color: #aa8567;
+}
+
+.frminp::placeholder {
+    color: #aa856799;
+    font-size: 16px;
+}
+
+#logfrm {
+    padding: 20px 48px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#soc {
+    font-size: 19px;
+    margin-top: -4px;
+}
+
+#logo {
+    font-family: 'Trajan Regular Pro';
+    /* margin-left: 16px; */
+    /* margin-top: 22px; */
+    font-size: calc(42px +  6* ((100vw - 1400px) / 380));
+    color: #aa8657;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(to right, #9a7237, #d9a26d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#logoo {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.full{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+#minilo {
+    height: unset;
+    z-index: 50;
+}
+
+#bg{
+    background: url('../img/minimal.png');
+    opacity: 0.4;
+    bottom: 0;
+    z-index: -10;
+}
+
+#login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#log{
+    background-color: #253246;
+    border-radius: 12px;
+}
+
+#logooo {
+    font-family: 'Trajan Regular Pro';
+    font-size: 44px;
+    background: linear-gradient(to right, #9a7237, #d9a26d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#logbtn{
+    background: #9a7237;
+    width: fit-content;
+    align-self: end;
+    border: none;
+    padding: 8px 20px;
+    color: white;
+    font-size: 21px;
+    border-radius: 9px;
+    margin-top: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#logbtn:hover {
+    background: #7a5d46;
+}

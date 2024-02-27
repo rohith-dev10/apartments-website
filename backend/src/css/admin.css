@@ -1,0 +1,39 @@
+.frminp{
+    background-color: unset;
+    padding: 0;
+    font-size: 18px;
+    margin: 4px 0;
+    color: black;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+#body {
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    flex-direction: column;
+}
+
+#titl {
+    font-size: 36px;
+    margin-bottom: 24px;
+    width: 60%;
+    text-align: center;
+}
+
+#cont{
+    width: 60%;
+}
+
+.divfrm {
+    padding: 16px 8px 16px 24px;
+    margin-bottom: 12px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+.divfrm:hover {
+    background-color: #d4d4d4;
+}
+

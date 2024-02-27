@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Holi-Images</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 55px;
+        }
+
+        .container img {
+            margin: 10px;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        @font-face {
+            font-family: "Trajan Regular Pro";
+            src: url('../font/Trajan\ Pro\ Regular/Trajan\ Pro\ Regular.ttf');
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .amenitytex {
+            margin-bottom: 24px;
+            /* margin-right: 10%; */
+            min-width: 360px;
+            max-width: 50%;
+        }
+
+        .under {
+            height: 1px;
+            background-color: #d8d8d8;
+            width: 11%;
+            margin-top: 24px;
+        }
+
+        .amenitiescol {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        div#amenitydesc {
+            margin-bottom: 32px;
+            color: black;
+        }
+
+        div#amenity {
+            font-size: 18px;
+            padding-right: 12px;
+        }
+
+        div#amentitl {
+            font-size: 45px;
+            margin: 0 92px 0 0;
+        }
+
+        .circ {
+            height: 10px;
+            width: 10px;
+            border: 1px solid white;
+            border-radius: 50%;
+            margin: 0 4px;
+            cursor: pointer;
+        }
+
+        div#alts {
+            position: absolute;
+            bottom: 16px;
+            right: 32px;
+            display: flex;
+            padding: 2px;
+        }
+
+        div#img {
+            position: relative;
+        }
+
+        div#title {
+            font-size: 36px;
+            margin: 48px 0 24px 0px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #253246;
+        }
+
+        #logo {
+            font-family: 'Trajan Regular Pro';
+            margin-left: 16px;
+            margin-top: 9px;
+            font-size: calc(42px + 6* ((100vw - 1400px) / 380));
+            color: #aa8657;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 17px;
+            cursor: pointer;
+            background: linear-gradient(to right, #9a7237, #d9a26d);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #soc {
+            font-size: 19px;
+            margin-top: -4px;
+        }
+
+        #menu {
+            display: flex;
+        }
+
+        #loga {
+            margin-right: 16px;
+        }
+
+        #login {
+            padding: 10px 30px;
+        }
+
+        .navmenu {
+            border: 1px solid #aa8657;
+            color: #aa8657;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .navmenu:hover {
+            background-color: #253246b3;
+        }
+
+        #dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 16px;
+        }
+
+        #drop {
+            display: flex;
+            align-items: center;
+            padding: 0 12px;
+            height: 100%;
+            margin-right: 0;
+        }
+
+        #amenity {
+            color: #b19148;
+        }
+
+        #dropit {
+            position: absolute;
+            display: none;
+            right: 0px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            background-color: #253246;
+            padding: 6px 0;
+        }
+
+        #amentitl {
+            color: #705B1C;
+        }
+
+        #dropdown:hover #dropit {
+            display: block;
+        }
+
+        .drpitm {
+            text-transform: uppercase;
+            font-size: 19px;
+            padding: 15px 30px;
+            color: #aa8657;
+            cursor: pointer;
+        }
+
+        .drpitm:hover {
+            background-color: #fffcf5;
+        }
+
+        .hami {
+            height: 1px;
+            width: 16px;
+            background: #aa8657;
+            margin: 5px 0;
+        }
+
+        #body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #cont {
+            width: 80%;
+        }
+
+        #carimg {
+            width: 70%;
+            margin-left: 17%;
+            height: 34vw;
+        }
+
+        #amen {
+            display: flex;
+            margin-top: 40px;
+            /* flex-wrap: wrap; */
+        }
+
+        @media only screen and (max-width: 1280px) {
+            #amen {
+                flex-direction: column;
+            }
+
+            div#amentitl {
+                margin: 0 0 24px 0;
+            }
+        }
+    </style>
+</head>
+
+<body id="imgContainer">
+    <nav id="nav">
+        <a href="home.html" id="">
+            <div id="logo">
+                <p>MiniWorld</p>
+                <p id="soc">Society</p>
+            </div>
+        </a>
+        <div id="menu">
+            <a href="login.html" id="loga">
+                <div id="login" class="navmenu">LOGIN</div>
+            </a>
+            <div id="dropdown">
+                <div id="drop" class="navmenu">
+                    <ul id="ham">
+                        <li class="hami"></li>
+                        <li class="hami"></li>
+                        <li class="hami"></li>
+                    </ul>
+                </div>
+                <div id="dropit">
+                    <ul id="drdwit">
+                        <a href="amenities.html">
+                            <li class="drpitm">Amenities</li>
+                        </a>
+                        <a href="events.html">
+                            <li class="drpitm">Events</li>
+                        </a>
+                        <a href="gallery.html">
+                            <li class="drpitm">Gallery</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="body">
+        <div id="cont">
+            <div id="title"></div>
+            <div id="img">
+                <!-- <img id="carimg" src="../img/amenities/workfh.jpg" alt=""> -->
+                <div id="alts">
+                    <div class="circ" style="background-color: white;"></div>
+                    <div class="circ"></div>
+                    <div class="circ"></div>
+                    <div class="circ"></div>
+                </div>
+            </div>
+            <div id="amen">
+                <div id="amentitl"></div>
+                <div id="amenity">
+                    <div id="amenitydesc">Views? Yes, we have a few hundred. We cater to those who like to live above
+                        the tree line, with lush green space that spans a city block and a rooftop veranda with plenty
+                        of loungers for working, relaxing or stargazing.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container"></div>
+    <script>
+        
+console.log("child window loaded")
+
+// window.addEventListener('message',(event)=>{
+//     console.log(event.data)
+// })
+
+
+        let ame_img_ar = [];
+        window.addEventListener('message', (event) => {
+            console.log("hi");
+            console.log(event.data);
+            let container = document.querySelector(".container");
+            let mainImg = document.querySelector('#img');
+            let title = document.querySelector('#amentitl');
+            let desc = document.querySelector('#amenitydesc');
+            let mainDesc = document.querySelector('#amenity');
+            desc.innerHTML = event.data.EVENT_DESCRIPTION;
+            mainDesc.appendChild(desc);
+            title.innerHTML = event.data.NAME;
+            const coverImg = document.createElement('img');
+            i = 0;
+            j = 0;
+            const eventImg = event.data.EVENT_ID;
+            const folderPath = `../img/events/${eventImg}`;
+            coverImg.src = `../img/events/${eventImg}.jpg`;
+            coverImg.setAttribute('id', 'carimg');
+            console.log(`../img/${eventImg}.jpg`);
+            mainImg.appendChild(coverImg);
+            fetch(folderPath)
+                .then(response => response.text())
+                .then(text => {
+                    const imageLinks = text.match(/<a.*?href="(.*?)".*?><span class="name">(.*?).(jpg|jpeg|png|gif)<\/span>/g)
+                        .map(link => link.match(/<a.*?href="(.*?)".*?><span class="name">(.*?).(jpg|jpeg|png|gif)<\/span>/)[1]);
+    
+                        console.log(imageLinks);
+    
+                    imageLinks.forEach(imageUrl => {
+                        let img = document.createElement("img");
+                        img.src = imageLinks[i];
+                        container.appendChild(img);
+                        const srcImg = imageLinks[i];
+                        ame_img_ar.push(srcImg);
+                        i++;
+                    });
+    
+    
+                })
+                .catch(error => console.error(error));
+    
+            let select = 0;
+    
+            let circles = document.querySelectorAll('.circ');
+            let carimg = document.querySelector('#carimg');
+    
+            circles.forEach((circle, i) => {
+                circle.addEventListener("click", () => {
+                    circles[select].style.backgroundColor = 'transparent';
+                    select = i;
+                    circle.style.backgroundColor = 'white';
+                    carimg.src = `${ame_img_ar[select]}`;
+                })
+            });
+    
+        });
+    
+    
+    
+    // let select=0;
+    
+    // let circles=document.querySelectorAll('.circ');
+    // let carimg=document.querySelector('#carimg');
+    
+    // circles.forEach((circle,i) => {
+    //     circle.addEventListener("click", ()=>{
+    //         circles[select].style.backgroundColor='transparent';
+    //         select=i;
+    //         circle.style.backgroundColor='white';
+    //         carimg.src=`${ame_img_ar[select]}`;
+    // 		// console.log(`${ame_img_ar[select]}`)
+    //     })
+    // });
+    </script>
+</body>
+
+</html>

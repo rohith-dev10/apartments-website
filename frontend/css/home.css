@@ -1,0 +1,205 @@
+@font-face {
+    font-family: "Trajan Regular Pro";
+    src: url('../font/Trajan\ Pro\ Regular/Trajan\ Pro\ Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+#loga {
+    margin-right: 16px;
+}
+
+#aptxt {
+    font-size: 38px;
+    color: white;
+    padding: 0 16px;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+#nav {
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    justify-content: space-between;
+    width: 100vw;
+    align-items: center;
+}
+
+#logo {
+    font-family: 'Trajan Regular Pro';
+    margin-left: 16px;
+    margin-top: 22px;
+    font-size: calc(42px +  6* ((100vw - 1400px) / 380));
+    color: #aa8657;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    background: linear-gradient(to right, #9a7237, #d9a26d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#soc {
+    font-size: 19px;
+    margin-top: -4px;
+}
+
+#arrows {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.8;
+    z-index: 20;
+}
+
+.arrow {
+    background-color: #3d3d3d;
+    color: #e1e1e1;
+    font-size: 44px;
+    padding: 3px 14px 3px 17px;
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+#menu {
+    display: flex;
+}
+
+#login {
+    padding: 10px 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+#dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 16px;
+}
+
+#drop {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    height: 100%;
+    margin-right: 0;
+}
+
+#dropit {
+    position: absolute;
+    display: none;
+    right: 0px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: #253246;
+    padding: 6px 0;
+}
+
+#dropdown:hover #dropit {
+    display: block;
+}
+
+.drpitm {
+    text-transform: uppercase;
+    font-size: 19px;
+    padding: 15px 30px;
+    color: #aa8657;
+    cursor: pointer;
+}
+
+.drpitm:hover {
+    background-color: #fffcf5;
+}
+
+.navmenu {
+    border: 1px solid #aa8657;
+    color: #aa8657;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navmenu:hover {
+    background-color: #253246b3;
+}
+
+.hami {
+    height: 1px;
+    width: 16px;
+    background: #aa8657;
+    margin: 5px 0;
+}
+
+.dimmer {
+    position: absolute;
+    height: 33%;
+    width: 100vw;
+    z-index: 30;
+    background: linear-gradient(#272727, transparent);
+}
+
+.bottomdim {
+    bottom: 0;
+    background: linear-gradient(transparent, #2c2c2c);
+    height: 15%;
+}
+
+#bg {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#bgi {
+    background: url('../img/apartment/1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background 0.6s ease;
+    animation: expand 12s infinite alternate linear;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes expand {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+#apbtn{
+    background-color: #aa8657;
+    z-index: 60;
+    color: white;
+    padding: 14px 30px;
+    word-spacing: 3px;
+    cursor: pointer;
+}
+
+#ap{
+    width: 100vw;
+    bottom: 36%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

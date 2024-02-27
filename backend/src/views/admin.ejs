@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="admin.css">
+    <style>
+        .frminp{
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="minilo" class="full" style="width: unset; position: unset;">
+        <div id="miniwlo">
+            <a href="M:/DiuAssign/C/SEM-4cs262/project_sms/frontend/html/f.html" id="">
+                <div id="logo">
+                    <p>MiniWorld</p>
+                    <p id="soc">Society</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="body">
+        <div id="titl">
+            Tables
+        </div>
+        <div id="cont">
+            <% tables.forEach((table)=>{ %>
+                <div class="divfrm">
+                    <form method="post" action="/admin/<%= table %>" class="table">
+                        <input type="submit" value="<%= table %>" class="frminp">
+                    </form >
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</body>
+</html>
