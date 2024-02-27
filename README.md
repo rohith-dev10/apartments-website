@@ -1,7 +1,7 @@
 This project is a full-fledged web application designed to streamline apartment management for residents, owners, and administrators. It leverages a robust database structure powered by MySQL to effectively maintain information about apartments, residents, events, and staff.
 
 
-Features:
+**Features:**
 
 
 Apartment Listings:
@@ -17,7 +17,7 @@ Administrative Dashboard:
 Administrators are equipped with a comprehensive dashboard, granting them full control over the database. They can add, edit, and remove information pertaining to apartments, residents, staff, events, and various other aspects of the system.
 
 
-Tech Stack:
+**Tech Stack:**
 
 
 Backend:
@@ -46,7 +46,7 @@ CSS: Responsible for styling and defining the visual appearance of the applicati
 JavaScript: Adds interactivity and dynamic behavior to the user interface.
 
 
-Benefits:
+**Benefits:**
 
 
 Improved Organization and Efficiency: Streamlined database management simplifies data access and manipulation, enhancing overall organization and efficiency.
